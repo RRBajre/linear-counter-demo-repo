@@ -17,7 +17,7 @@ workspace:
 hooks:
   timeout_ms: 10000
   after_create: |
-    python3 /Users/raj1.bajre/Documents/Symphony/demo-counter-app/scripts/bootstrap_workspace.py /Users/raj1.bajre/Documents/Symphony/linear-counter-demo-repo .
+    git clone https://github.com/RRBajre/linear-counter-demo-repo.git .
 agent:
   max_concurrent_agents: 1
   max_turns: 4
