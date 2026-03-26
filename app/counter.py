@@ -3,4 +3,5 @@ def increment(value: int) -> int:
 
 
 def decrement(value: int) -> int:
-    return value - 1
+    # Clamp at zero so non-positive inputs never go negative
+    return max(value - 1, 0)
